@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1113459400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the landing page",
+            "match": {
+              "location": "LoginStep_Definition.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10353069101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "upload-file;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 627232800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3621365001,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters \"User27\" and \"Userpass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User27\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Userpass123\"",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStep_Definition.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1340843899,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "navigate to the \"Files\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files\"",
+                  "offset": 16
+                }
+              ],
+              "location": "UploadFileStep_Definition.navigate_to_the(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4681973099,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "unload file",
+            "match": {
+              "location": "UploadFileStep_Definition.unload_file()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Upload_File"
+          }
+        ]
+      }
+    ],
+    "name": "Upload File",
+    "description": "",
+    "id": "upload-file",
+    "keyword": "Feature",
+    "uri": "src\\test\\resourses\\features\\uploadFile.feature",
+    "tags": []
+  }
+]
